@@ -6,7 +6,7 @@ import os
 class ChefMateAgent:
     def __init__(self):
         api_key = os.getenv("OPENROUTER_API_KEY")
-        model_name = os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.2-3b-instruct:free")
+        model_name = os.getenv("OPENROUTER_MODEL", "xiaomi/mimo-v2-flash:free")
         
         # Use OpenRouter model string directly
         model_str = f"openai:{model_name}"
